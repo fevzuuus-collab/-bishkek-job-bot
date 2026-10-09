@@ -160,14 +160,15 @@ def webhook():
             MENU
         )
         return {"ok": True}
+    
 
     if text == "📞 Связаться с администратором":
-    send(
-        chat_id,
-        "📩 Связаться с администратором:\nhttps://t.me/Shidolino",
-        MENU
-    )
-    return {"ok": True}
+        send(
+            chat_id,
+            "📩 Связаться с администратором:\nhttps://t.me/Shidolino",
+            MENU
+        )
+        return {"ok": True}
 
 
     if text == "📝 Разместить вакансию":
