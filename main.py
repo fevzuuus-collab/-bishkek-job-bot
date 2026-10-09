@@ -162,12 +162,13 @@ def webhook():
         return {"ok": True}
 
     if text == "📞 Связаться с администратором":
-        send(
-            chat_id,
-            "Канал вакансий:\nhttps://t.me/bishkek_rabota_kgz",
-            MENU
-        )
-        return {"ok": True}
+    send(
+        chat_id,
+        "📩 Связаться с администратором:\nhttps://t.me/Shidolino",
+        MENU
+    )
+    return {"ok": True}
+
 
     if text == "📝 Разместить вакансию":
         states[chat_id] = {"step": 0, "answers": []}
